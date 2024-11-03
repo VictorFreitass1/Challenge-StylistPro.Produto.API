@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StylistPro.Produto.API", "StylistPro.Produto.API\StylistPro.Produto.API.csproj", "{ADED04F1-805B-4B11-A2FB-7FBDF357D8AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{9862BAD9-6861-403A-B874-5F01683F2B7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{AFA8F277-4CD2-4E60-96A3-58F2171EA2E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{7A881E70-6227-41B4-B9F7-E168B776EE9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{14E46999-7E2C-42A4-BCAB-9B1173D86DEB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StylistPro.Produto.Application", "StylistPro.Produto.Application\StylistPro.Produto.Application.csproj", "{0B28173B-EA60-41FE-A49A-8FAA91435C9E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StylistPro.Produto.Domain", "StylistPro.Produto.Domain\StylistPro.Produto.Domain.csproj", "{520DF38D-E208-4649-94CD-8296E9207C56}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StylistPro.Produto.Data", "StylistPro.Produto.Data\StylistPro.Produto.Data.csproj", "{CF01B575-0B27-44FB-9B43-CE7CC3137233}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StylistPro.Produto.IoC", "StylistPro.Produto.IoC\StylistPro.Produto.IoC.csproj", "{C2795EB6-26D6-4AC5-A127-6B99123CBF4C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StylistPro.Produto.Service", "StylistPro.Produto.Service\StylistPro.Produto.Service.csproj", "{B1F0722D-06E6-4ED9-884C-ABC3269FEE56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Test", "4 - Test", "{839DE09C-2063-439C-9AE8-988AB71C304F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StylistPro.Produto.Tests", "StylistPro.Produto.Tests\StylistPro.Produto.Tests.csproj", "{B91FCD05-47B6-4C64-A3B7-8B5C4BEC507E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADED04F1-805B-4B11-A2FB-7FBDF357D8AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADED04F1-805B-4B11-A2FB-7FBDF357D8AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADED04F1-805B-4B11-A2FB-7FBDF357D8AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADED04F1-805B-4B11-A2FB-7FBDF357D8AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B28173B-EA60-41FE-A49A-8FAA91435C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B28173B-EA60-41FE-A49A-8FAA91435C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B28173B-EA60-41FE-A49A-8FAA91435C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B28173B-EA60-41FE-A49A-8FAA91435C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{520DF38D-E208-4649-94CD-8296E9207C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{520DF38D-E208-4649-94CD-8296E9207C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{520DF38D-E208-4649-94CD-8296E9207C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{520DF38D-E208-4649-94CD-8296E9207C56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF01B575-0B27-44FB-9B43-CE7CC3137233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF01B575-0B27-44FB-9B43-CE7CC3137233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF01B575-0B27-44FB-9B43-CE7CC3137233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF01B575-0B27-44FB-9B43-CE7CC3137233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2795EB6-26D6-4AC5-A127-6B99123CBF4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2795EB6-26D6-4AC5-A127-6B99123CBF4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2795EB6-26D6-4AC5-A127-6B99123CBF4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2795EB6-26D6-4AC5-A127-6B99123CBF4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1F0722D-06E6-4ED9-884C-ABC3269FEE56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1F0722D-06E6-4ED9-884C-ABC3269FEE56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1F0722D-06E6-4ED9-884C-ABC3269FEE56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1F0722D-06E6-4ED9-884C-ABC3269FEE56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B91FCD05-47B6-4C64-A3B7-8B5C4BEC507E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B91FCD05-47B6-4C64-A3B7-8B5C4BEC507E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B91FCD05-47B6-4C64-A3B7-8B5C4BEC507E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B91FCD05-47B6-4C64-A3B7-8B5C4BEC507E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ADED04F1-805B-4B11-A2FB-7FBDF357D8AF} = {9862BAD9-6861-403A-B874-5F01683F2B7C}
+		{0B28173B-EA60-41FE-A49A-8FAA91435C9E} = {AFA8F277-4CD2-4E60-96A3-58F2171EA2E3}
+		{520DF38D-E208-4649-94CD-8296E9207C56} = {7A881E70-6227-41B4-B9F7-E168B776EE9F}
+		{CF01B575-0B27-44FB-9B43-CE7CC3137233} = {14E46999-7E2C-42A4-BCAB-9B1173D86DEB}
+		{C2795EB6-26D6-4AC5-A127-6B99123CBF4C} = {14E46999-7E2C-42A4-BCAB-9B1173D86DEB}
+		{B1F0722D-06E6-4ED9-884C-ABC3269FEE56} = {14E46999-7E2C-42A4-BCAB-9B1173D86DEB}
+		{B91FCD05-47B6-4C64-A3B7-8B5C4BEC507E} = {839DE09C-2063-439C-9AE8-988AB71C304F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9667D5D0-8B42-42EF-A312-A5DB5BF8E8E7}
+	EndGlobalSection
+EndGlobal
