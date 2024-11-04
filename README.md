@@ -23,6 +23,9 @@ Esta API foi desenvolvida utilizando uma arquitetura de microservices e segue os
 - **Infrastructure Layer (Camada de Infraestrutura)**: Gerencia tecnologias externas como banco de dados e integrações com serviços externos.
 - **Test Layer (Camada de Testes)**: Inclui testes unitários e de integração utilizando xUnit para garantir o comportamento correto da aplicação
 
+## Testes Unitários
+- Testes unitários foram implementados nas camadas `ApplicationService` e `Repository` para verificar o funcionamento correto e a integridade dos dados, aumentando a robustez e confiabilidade da API.
+
 ## Práticas de Clean Code e SOLID
 As práticas de Clean Code foram aplicadas para assegurar a clareza e a simplicidade do código, promovendo uma estrutura modular e de fácil manutenção. Os princípios SOLID foram integrados da seguinte forma:
 - **Single Responsibility Principle (SRP)**: Cada classe na API tem uma única responsabilidade.
