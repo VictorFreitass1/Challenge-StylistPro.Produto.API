@@ -21,6 +21,7 @@ Esta API foi desenvolvida utilizando uma arquitetura de microservices e segue os
 - **Application Layer (Camada de Aplicação)**: Contém a lógica de negócios de alto nível, coordenando operações entre a camada de domínio e a camada de apresentação.
 - **Domain Layer (Camada de Domínio)**: Define as entidades de domínio e as regras de negócios centrais.
 - **Infrastructure Layer (Camada de Infraestrutura)**: Gerencia tecnologias externas como banco de dados e integrações com serviços externos.
+- **Test Layer (Camada de Testes)**: Inclui testes unitários e de integração utilizando xUnit para garantir o comportamento correto da aplicação
 
 ## Práticas de Clean Code e SOLID
 As práticas de Clean Code foram aplicadas para assegurar a clareza e a simplicidade do código, promovendo uma estrutura modular e de fácil manutenção. Os princípios SOLID foram integrados da seguinte forma:
@@ -47,6 +48,7 @@ A arquitetura apresentada para o projeto **StylistPro** segue os princípios da 
 - **ASP.NET Core**: Framework para desenvolvimento da API.
 - **OpenAPI/Swagger**: Configurado para a documentação da API.
 - **ML.NET**: Ferramenta de machine learning para recomendações de produtos.
+- **xUnit**: para testes automatizados
 - **ViaCEP API**: Para integração com CEPs.
 
 ## Requisitos
