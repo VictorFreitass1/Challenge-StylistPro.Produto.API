@@ -23,13 +23,22 @@ Esta API foi desenvolvida utilizando uma arquitetura de microservices e segue os
 - **Infrastructure Layer (Camada de Infraestrutura)**: Gerencia tecnologias externas como banco de dados e integrações com serviços externos.
 - **Test Layer (Camada de Testes)**: Inclui testes unitários e de integração utilizando xUnit para garantir o comportamento correto da aplicação
 
-## Práticas de Clean Code e SOLID
-As práticas de Clean Code foram aplicadas para assegurar a clareza e a simplicidade do código, promovendo uma estrutura modular e de fácil manutenção. Os princípios SOLID foram integrados da seguinte forma:
-- **Single Responsibility Principle (SRP)**: Cada classe na API tem uma única responsabilidade.
-- **Open-Closed Principle (OCP)**: Componentes estão abertos para extensão e fechados para modificação, facilitando a adição de novas funcionalidades.
-- **Liskov Substitution Principle (LSP)**: Implementação de interfaces e herança respeitam as substituições esperadas.
-- **Interface Segregation Principle (ISP)**: Interfaces específicas para cada funcionalidade evitam dependências desnecessárias.
-- **Dependency Inversion Principle (DIP)**: Inversão de dependência é usada para desacoplar a lógica de negócio da infraestrutura.
+## Clean Code 
+
+- **Clean Code** é um conjunto de boas práticas e princípios para escrever códigos legíveis, simples, e fáceis de manter facilitando a manutenção e evolução do sistema. Alguns dos princípios básicos incluem:
+- **Nomes significativos**: Os nomes de variáveis, métodos, classes e outros elementos do código devem ser descritivos e deixar claro seu propósito.
+- **Funções pequenas e de única responsabilidade**: Funções devem ser curtas e fazer apenas uma coisa. Elas devem ser simples de entender e ter um único propósito.
+- **Remoção de código Morto**: Código não utilizado ou comentado deve ser removido para evitar confusão e manter o código limpo. 
+- **Tratamento de erros claro**: Exceções e validações ajudam a evitar comportamentos inesperados e facilitam a identificação de problemas.
+- **Evite Dependências Ocultas**: O código deve ser claro sobre quais dados ele precisa. Depender de variáveis globais ou de comportamentos que não são explícitos pode gerar bugs difíceis de identificar. 
+
+## SOLID
+  
+- **SRP (Single Responsibility Principle)**: Cada classe tem uma única responsabilidade.
+- **OCP (Open/Closed Principle)**: Módulos são abertos para extensão e fechados para modificação.
+- **LSP (Liskov Substitution Principle)**: Classe e interface específica para casos de uso.
+- **ISP (Dependency Inversion Principle)**: Princípio da segregação de interfaces.
+- **DIP (Dependency Inversion Principle)**: Inversão de dependências torna o sistema mais modular.
 
 ## Testes Unitários
 - Testes unitários foram implementados nas camadas `ApplicationService` e `Repository` para verificar o funcionamento correto e a integridade dos dados, aumentando a robustez e confiabilidade da API.
