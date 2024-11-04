@@ -103,7 +103,7 @@ namespace StylistPro.Produto.API.Controllers
                 case >= 3:
                     return "Recomendado";
                 default:
-                    return "Recomendado";
+                    return "Não Recomendado";
             }
         }
     }
