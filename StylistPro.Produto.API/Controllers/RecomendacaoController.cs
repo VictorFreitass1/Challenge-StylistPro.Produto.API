@@ -6,9 +6,11 @@ namespace StylistPro.Produto.API.Controllers
 {  
     public class DadosRecomendacao
     {
+
         [LoadColumn(0)] public string CPF { get; set; }
-        [LoadColumn(1)] public string Produto { get; set; }
-        [LoadColumn(2)] public float AvaliacaoProduto { get; set; }
+        [LoadColumn(1)] public string Nome { get; set; }
+        [LoadColumn(2)] public string Produto { get; set; }
+        [LoadColumn(3)] public float AvaliacaoProduto { get; set; }
     }
     public class RecomendacaoProduto
     {
@@ -37,8 +39,8 @@ namespace StylistPro.Produto.API.Controllers
             }
         }
 
-        [HttpGet("recomendar/{cpf}/{produto}")]
-        public IActionResult Recomendar(string cpf, string produto)
+        [HttpGet("recomendar/{cpf}/{nome}/{produto}")]
+        public IActionResult Recomendar(string nome, string cpf, string produto)
         {
             if (!System.IO.File.Exists(caminhoModelo))
             {
@@ -55,6 +57,7 @@ namespace StylistPro.Produto.API.Controllers
 
             var recomendacao = engineRecomendacao.Predict(new DadosRecomendacao
             {
+                Nome = nome,
                 CPF = cpf,
                 Produto = produto
             });
@@ -79,9 +82,10 @@ namespace StylistPro.Produto.API.Controllers
                 path: caminhoTreinamento, hasHeader: true, separatorChar: ',');
 
             var pipeline = mlContext.Transforms.CopyColumns(outputColumnName: "Label", inputColumnName: nameof(DadosRecomendacao.AvaliacaoProduto))
+                .Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "NomeCodificado", inputColumnName: nameof(DadosRecomendacao.Nome)))
                 .Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "CPFCodificado", inputColumnName: nameof(DadosRecomendacao.CPF)))
                 .Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "ProdutoCodificado", inputColumnName: nameof(DadosRecomendacao.Produto)))
-                .Append(mlContext.Transforms.Concatenate("Features", "CPFCodificado", "ProdutoCodificado"))
+                .Append(mlContext.Transforms.Concatenate("Features", "NomeCodificado", "CPFCodificado", "ProdutoCodificado"))
                 .Append(mlContext.Regression.Trainers.FastTree());
 
             var modelo = pipeline.Fit(dadosTreinamento);
